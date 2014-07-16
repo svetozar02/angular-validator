@@ -1,6 +1,10 @@
 {
   "name": "angular-validator",
+<<<<<<< HEAD
   "version": "0.2.5",
+=======
+  "version": "0.2.3",
+>>>>>>> a4029e3... added grunt-uglify. updated version 0.2.3.
   "main": [
     "./dist/angular-validator.js",
     "./dist/angular-validator-rules.js"
@@ -21,7 +25,12 @@
     "tests"
   ],
   "dependencies": {
+<<<<<<< HEAD
     "angular": "~1.2.22",
     "angular-mocks": "~1.2.22"
+=======
+    "angular": ">=1.2.18",
+    "angular-mocks": ">=1.2.18"
+>>>>>>> a4029e3... added grunt-uglify. updated version 0.2.3.
   }
 }
