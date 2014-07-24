@@ -51,6 +51,7 @@ angular.module 'validator.provider', []
                         $(label).remove()
                     $label = $ "<label class='control-label error'>#{errorMessage}</label>"
                     $label.attr 'for', attrs.id if attrs.id
+<<<<<<< HEAD
                     $(element).parent().append $label
                     break
                 else if parent.hasClass 'input-group'
@@ -60,6 +61,12 @@ angular.module 'validator.provider', []
                     $label = $ "<label class='control-label error'>#{errorMessage}</label>"
                     $label.attr 'for', attrs.id if attrs.id
                     $(element).parent().parent().append $label
+=======
+                    if $(element).parent().hasClass 'input-group'
+                      $(element).parent().parent().append $label
+                    else
+                      $(element).parent().append $label
+>>>>>>> a5d6d6b... - fixed UI issue on error message placement
                     break
                 parent = parent.parent()
 

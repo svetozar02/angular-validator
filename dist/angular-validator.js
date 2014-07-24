@@ -378,6 +378,7 @@
             if (attrs.id) {
               $label.attr('for', attrs.id);
             }
+<<<<<<< HEAD
             $(element).parent().append($label);
             break;
           } else if (parent.hasClass('input-group')) {
@@ -394,6 +395,13 @@
               $label.attr('for', attrs.id);
             }
             $(element).parent().parent().append($label);
+=======
+            if ($(element).parent().hasClass('input-group')) {
+              $(element).parent().parent().append($label);
+            } else {
+              $(element).parent().append($label);
+            }
+>>>>>>> a5d6d6b... - fixed UI issue on error message placement
             break;
           }
           _results.push(parent = parent.parent());
