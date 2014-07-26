@@ -378,7 +378,7 @@
             if (attrs.id) {
               $label.attr('for', attrs.id);
             }
-            parent.append($label);
+            $(element).parent().append($label);
             break;
           } else if (parent.hasClass('input-group')) {
             parent.parent().addClass('has-error');
