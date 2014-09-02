@@ -46,16 +46,9 @@ module.exports = (grunt) ->
 
         karma:
             ng1_2:
-<<<<<<< HEAD
-                configFile: './test/karma-ng1.2.config.coffee'
-            # don't want to automatically test minified files since they aren't handled by grunt
-            # ng1_2_min:
-            #     configFile: './test/karma-ng1.2.min.config.coffee'
-=======
                 configFile: 'test/karma-ng1.2.config.coffee'
             ng1_2_min:
                 configFile: 'test/karma-ng1.2.min.config.coffee'
->>>>>>> a4029e3... added grunt-uglify. updated version 0.2.3.
 
     # -----------------------------------
     # register task
