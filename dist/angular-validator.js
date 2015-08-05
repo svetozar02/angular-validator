@@ -143,7 +143,7 @@
             if (observerRequired.validatorRequired || observerRequired.required) {
               registerRequired();
             }
-            match = value.match(/[^\[\s]+:[\s,]{0,1}\[[^\]]*\]/g);
+            match = value.match(/[^\[\s]+:[\s,]*\[[^\]]*\]/g);
             if (match) {
               for (_i = 0, _len = match.length; _i < _len; _i++) {
                 group = match[_i];

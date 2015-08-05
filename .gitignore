@@ -13,3 +13,5 @@ bower_components
 # compass
 .sass-cache
 .project
+
+angular-validator.iml

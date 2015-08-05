@@ -114,7 +114,7 @@ angular.module 'validator.directive', ['validator.provider']
 
             # multiple validator groups
             # pattern: validator="[group-1: [ruleA, ruleB], group-2: [ruleA, ruleC]]"
-            match = value.match /[^\[\s]+:[\s,]{0,1}\[[^\]]*\]/g
+            match = value.match /[^\[\s]+:[\s,]*\[[^\]]*\]/g
             if match
                 for group in match
                     currentRules = []
